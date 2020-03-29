@@ -18,7 +18,8 @@ Merkle Hash Tree is a simple binary tree consisting of hashed leaves and nodes. 
   
 *Note that A, B, C, D are the hashes of the individual transactions
 
-		 ROOT=Hash(I+J)
+
+		  ROOT=Hash(I+J)
                   /        \
                  /          \
           I=Hash(F+G)        J=Hash(H)
