@@ -37,7 +37,8 @@ Merkle Hash Tree is a simple binary tree consisting of hashed leaves and nodes. 
 Merkle tree transaction validation is the missing node hashes required to compute all the nodes between the leaf and the tree root. If the root hash you compute from the audit path matches the currently advertised merkle tree root hash, then the leaf exists in the tree. The consistency proof lets you verify that any two versions of a tree are consistent: that is, the later version includes everything in the earlier version, in the same order, and all new entries come after the entries in the older version.
 
 
-```./buildmtree.py alice,bob,carlol,david
+```
+./buildmtree.py alice,bob,carlol,david
 cat merkle.tree
 ./checkinclusion.py richard
 ./checkinclusion.py david
